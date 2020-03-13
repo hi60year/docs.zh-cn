@@ -31,7 +31,7 @@ ms.locfileid: "68630678"
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-3/snippet202.fs)]
 
-`inline` 如果`int`不使用修饰符, 则类型推理强制函数采用特定类型 (在本例中为)。 但对于`inline`修饰符, 还会将函数推断为具有静态解析的类型参数。 `inline`通过修饰符, 将类型推断为以下内容:
+`inline` 如果不使用修饰符, 则类型推理强制函数采用特定类型 (在本例中为`int`)。 但对于`inline`修饰符, 还会将函数推断为具有静态解析的类型参数。 `inline`通过修饰符, 将类型推断为以下内容:
 
 ```fsharp
 ^a -> unit when ^a : (static member op_Explicit : ^a -> float)
